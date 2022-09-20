@@ -1,6 +1,6 @@
 Approach - 1 - Using Sorting Method - T.C - O(N*logN), S.C = O(1);
 
-Approach - w - Counting Method - T.C - O(N), S.C = O(1);
+Approach - 2 - Counting Method - T.C - O(N), S.C = O(1);
 // solution
 void sortColors(vector<int>& nums) {
         int count0 = 0;
