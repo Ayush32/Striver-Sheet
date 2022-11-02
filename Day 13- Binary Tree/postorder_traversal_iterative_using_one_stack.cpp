@@ -1,3 +1,5 @@
+// using one stack
+
 vector<int> postOrderIterative(struct Node* root)
 {
     vector<int> postOrderList;
