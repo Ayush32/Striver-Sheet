@@ -14,6 +14,10 @@ public:
             return new TreeNode(val);
         TreeNode* curr = root;
         while(true){
+         
+         if(curr->data == Key) { // if key is already present don't modify the bst just return root
+            break;
+        }
             if(curr->val <= val) // right subtree insert if true
             {
                 if(curr->right != NULL) {
