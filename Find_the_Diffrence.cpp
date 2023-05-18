@@ -46,3 +46,28 @@ return ans;
     
     }
 };
+
+Ques - 7
+    class Solution {
+public:
+    int addDigits(int n) {
+      
+    int num = n;
+    int sum = n;
+    
+    while(sum > 9)
+    {
+        sum = 0;
+        while(num > 0) {
+            // last digit
+            int rem = num % 10;
+            sum += rem;
+            // first digit;
+            num = num /10;
+        }
+        num = sum; 
+    }
+    return sum;
+    }
+};
+
